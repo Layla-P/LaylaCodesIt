@@ -5,20 +5,20 @@
 
 @font-face {
     font-family: 'RitzyNormal';
-    src: url('file:///C:\Users\Layla\Source\Repos\Layla-P\LaylaCodesIt\Client\wwwroot\fonts\RitzyNormal.ttf') format('truetype');
+    src: url('../fonts/RitzyNormal.ttf') format('truetype');
 }
 @font-face {
     font-family: 'Oswald';
-    src: url('file:///C:\Users\Layla\Source\Repos\Layla-P\LaylaCodesIt\Client\wwwroot\fonts\Oswald-Regular.ttf') format('truetype');
+    src: url('../fonts/Oswald-Regular.ttf') format('truetype');
 }
 @font-face {
     font-family: 'Oswald';
-    src: url('file:///C:\Users\Layla\Source\Repos\Layla-P\LaylaCodesIt\Client\wwwroot\fonts\Oswald-Light.ttf') format('truetype');
+    src: url('../fonts/Oswald-Light.ttf') format('truetype');
     font-weight: lighter;
 }
 @font-face {
     font-family: 'Oswald';
-    src: url('file:///C:\Users\Layla\Source\Repos\Layla-P\LaylaCodesIt\Client\wwwroot\fonts\Oswald-Bold.ttf') format('truetype');
+    src: url('../fonts/Oswald-Bold.ttf') format('truetype');
     font-weight: bold;
 }
 
