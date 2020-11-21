@@ -2,7 +2,9 @@
     theme: {
         extend: {
             colors: {
-                blazoredorange: '#ff6600'
+                laylateal: '#0c6474',
+                laylanavy: '#31374d',
+                laylagold: '#c8903e'
             }
         }
     }
