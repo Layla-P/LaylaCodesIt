@@ -1,92 +1,38 @@
-﻿@*<div class="column is-2">
-        <nav class="menu">
-            <p class="menu-label">Menu</p>
-            <ul class="menu-list">
-                <NavLink href="/" Match="NavLinkMatch.All" ActiveClass="active-link">
-                    Home
-                </NavLink>
-                <NavLink href="/products" ActiveClass="active-link">
-                    Products
-                </NavLink>
-                <NavLink href="/about" ActiveClass="active-link">
-                    About
-                </NavLink>
-            </ul>
-        </nav>
-    </div>*@
+﻿@*https://codepen.io/lukebennett88/pen/qQXzwp*@
 
-<!-- component -->
+<nav class="nav flex flex-wrap items-center justify-between px-4">
+    <div class="flex flex-no-shrink items-center mr-6 py-3 text-laylanavy-700 font-bold">
 
-    <!-- container -->
+        <NavLink href="/" Class="float-left">
+            <img class="h-8 w-8 mx-auto inline-block"
+                 src="../images/LaylaCodesItLogo.png"
+                 alt="LaylaCodesIt logo" />
+            Home
+        </NavLink>
+    </div>
 
-    <aside class="flex flex-col items-center bg-white text-gray-700 shadow h-full">
-        <!-- Side Nav Bar-->
+    <input class="menu-btn hidden" type="checkbox" id="menu-btn">
+    <label class="menu-icon block cursor-pointer md:hidden px-2 py-4 relative select-none" for="menu-btn">
+        <span class="navicon bg-grey-darkest flex items-center relative"></span>
+    </label>
 
-        <div class="h-16 flex items-center w-full">
-            <!-- Logo Section -->
-           <NavLink href="/home" ActiveClass="h-8 w-8 mx-auto mb-4">
-                <img class="h-8 w-8 mx-auto"
-                     src="../images/LaylaCodesItLogo.png"
-                alt="LaylaCodesIt logo" />
-            </NavLink> 
-        </div>
+    <ul class="menu border-b md:border-none flex justify-end list-reset m-0 w-full md:w-auto">
+        <li class="border-t md:border-none">
+            <NavLink href="/about" Class="block md:inline-block px-4 py-3 no-underline text-laylanavy-700 capitalize hover:text-laylateal-600 active:font-bold">About</NavLink>
+        </li>
 
-        <ul>
-            <!-- Items Section -->
-            <!--<li class="hover:bg-gray-100">
-                <a href="."
-                   class="h-16 px-6 flex flex justify-center items-center w-full
-					focus:text-orange-500">
-                    <svg class="h-5 w-5"
-                         xmlns="http://www.w3.org/2000/svg"
-                         width="24"
-                         height="24"
-                         viewBox="0 0 24 24"
-                         fill="none"
-                         stroke="currentColor"
-                         stroke-width="2"
-                         stroke-linecap="round"
-                         stroke-linejoin="round">
-                        <polyline points="22 12 16 12 14 15 10 15 8 12 2 12"></polyline>
-                        <path d="M5.45 5.11L2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0
-							2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0
-							0-1.79 1.11z"></path>
-                    </svg>
+        <li class="border-t md:border-none">
+            <NavLink href="/streaming" Class="block md:inline-block px-4 py-3 no-underline text-laylanavy-700 capitalize hover:text-laylateal-600 active:text-laylanavy-800">Streaming</NavLink>
+        </li>
 
-                </a>
-            </li>-->
-
-            <li class="hover:bg-laylagold-100">
-                <NavLink href="/about" ActiveClass="h-16 p-6 flex flex justify-center items-center w-full
-            focus:text-laylanavy-500">
-                    About
-                </NavLink>
-              
-            </li>
+        <li class="border-t md:border-none">
+            <NavLink href="/speaking" Class="block md:inline-block px-4 py-3 no-underline text-laylanavy-700 capitalize hover:text-laylateal-600 active:text-laylanavy-800">Speaking</NavLink>
+        </li>
+        <li class="border-t md:border-none">
+            <NavLink href="/community" Class="block md:inline-block px-4 py-3 no-underline text-laylanavy-700 capitalize hover:text-laylateal-600 active:text-laylanavy-800">Community</NavLink>
+        </li>
 
 
-        </ul>
 
-        <!--<div class="mt-auto h-16 flex items-center w-full">-->
-            <!-- Action Section -->
-            <!--<button class="h-16 w-10 mx-auto flex flex justify-center items-center
-				w-full focus:text-orange-500 hover:bg-red-200 focus:outline-none">
-                <svg class="h-5 w-5 text-red-700"
-                     xmlns="http://www.w3.org/2000/svg"
-                     width="24"
-                     height="24"
-                     viewBox="0 0 24 24"
-                     fill="none"
-                     stroke="currentColor"
-                     stroke-width="2"
-                     stroke-linecap="round"
-                     stroke-linejoin="round">
-                    <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path>
-                    <polyline points="16 17 21 12 16 7"></polyline>
-                    <line x1="21" y1="12" x2="9" y2="12"></line>
-                </svg>
-
-            </button>
-        </div>-->
-
-    </aside>
+    </ul>
+</nav>
