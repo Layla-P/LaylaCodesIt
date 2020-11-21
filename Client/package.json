@@ -1,0 +1,18 @@
+{
+  "scripts": {
+    "build": "npm run css:prod && npm run dotnet:publish",
+    "css:prod": "gulp css:prod",
+    "css:dev": "gulp css:dev",
+    "dotnet:publish": "dotnet publish -c Release -o dist"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.7.4",
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-cli": "2.3.0",
+    "gulp-postcss": "^8.0.0",
+    "gulp-purgecss": "^3.0.0",
+    "precss": "^4.0.0",
+    "tailwindcss": "^1.2.0"
+  }
+}
