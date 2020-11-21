@@ -10565,6 +10565,14 @@ video {
   font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
+.font-deco {
+  font-family: RitzyNormal, Georgia, serif;
+}
+
+.font-decoserif {
+  font-family: Oswald, roboto, sans;
+}
+
 .font-hairline {
   font-weight: 100;
 }
@@ -22052,6 +22060,34 @@ video {
           animation: bounce 1s infinite;
 }
 
+@font-face {
+  font-family: 'RitzyNormal';
+
+  src: url('file:///C:\Users\Layla\Source\Repos\Layla-P\LaylaCodesIt\Client\wwwroot\fonts\RitzyNormal.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Oswald';
+
+  src: url('file:///C:\Users\Layla\Source\Repos\Layla-P\LaylaCodesIt\Client\wwwroot\fonts\Oswald-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Oswald';
+
+  src: url('file:///C:\Users\Layla\Source\Repos\Layla-P\LaylaCodesIt\Client\wwwroot\fonts\Oswald-Light.ttf') format('truetype');
+
+  font-weight: lighter;
+}
+
+@font-face {
+  font-family: 'Oswald';
+
+  src: url('file:///C:\Users\Layla\Source\Repos\Layla-P\LaylaCodesIt\Client\wwwroot\fonts\Oswald-Bold.ttf') format('truetype');
+
+  font-weight: bold;
+}
+
 #blazor-error-ui {
   background: lightyellow;
   bottom: 0;
@@ -32049,6 +32085,14 @@ video {
 
   .sm\:font-mono {
     font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  }
+
+  .sm\:font-deco {
+    font-family: RitzyNormal, Georgia, serif;
+  }
+
+  .sm\:font-decoserif {
+    font-family: Oswald, roboto, sans;
   }
 
   .sm\:font-hairline {
@@ -53453,6 +53497,14 @@ video {
     font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   }
 
+  .md\:font-deco {
+    font-family: RitzyNormal, Georgia, serif;
+  }
+
+  .md\:font-decoserif {
+    font-family: Oswald, roboto, sans;
+  }
+
   .md\:font-hairline {
     font-weight: 100;
   }
@@ -74855,6 +74907,14 @@ video {
     font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   }
 
+  .lg\:font-deco {
+    font-family: RitzyNormal, Georgia, serif;
+  }
+
+  .lg\:font-decoserif {
+    font-family: Oswald, roboto, sans;
+  }
+
   .lg\:font-hairline {
     font-weight: 100;
   }
@@ -96255,6 +96315,14 @@ video {
 
   .xl\:font-mono {
     font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  }
+
+  .xl\:font-deco {
+    font-family: RitzyNormal, Georgia, serif;
+  }
+
+  .xl\:font-decoserif {
+    font-family: Oswald, roboto, sans;
   }
 
   .xl\:font-hairline {
