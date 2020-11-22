@@ -13,17 +13,16 @@ gulp.task('css:dev', () => {
         .pipe(gulp.dest('./wwwroot/css/'));
 });
 
-gulp.task('css:prod', () => {
-    return gulp.src('./Styles/site.css')
-        .pipe(postcss([
-            require('precss'),
-            require('tailwindcss'),
-            require('autoprefixer')
-        ]))
-        .pipe(purgecss({ content: ['**/*.html', '**/*.razor'] }))
-        .pipe(cleanCSS({ level: 2 }))
-        .pipe(gulp.dest('./wwwroot/css/'));
-});
+//gulp.task('css:prod', () => {
+//    return gulp.src('./Styles/site.css')
+//        .pipe(postcss([
+//            require('precss'),
+//            require('tailwindcss'),
+//            require('autoprefixer')
+//        ]))
+//        .pipe(purgecss({ content: ['**/*.html', '**/*.razor'] }))
+//        .pipe(gulp.dest('./wwwroot/css/'));
+//});
 
 gulp.task('copy', () => {
     return gulp.src('./routes.json')

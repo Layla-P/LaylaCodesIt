@@ -32,4 +32,8 @@
 		<None Include="Pages\Appearances.razor" />
 	</ItemGroup>
 
+	<ItemGroup>
+	  <Folder Include="wwwroot\css\" />
+	</ItemGroup>
+
 </Project>
