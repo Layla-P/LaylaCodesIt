@@ -1,29 +1,71 @@
 ﻿@page "/"
-@*<div class="">
-        <div class="content-title-group not-found">
-            <h2 class="title">Product Wish List</h2>
-            <p>
-                This project was created to help represent a fundamental app written
-                with Blazor. The shopping theme is used throughout the app.
-            </p>
-            <br />
-            <h2 class="title">Resources</h2>
-            <ul>
-                <li>
-                    <a href="https://github.com/MicrosoftDocs/mslearn-staticwebapp-dotnet">
-                        Code in GitHub
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </div>*@
+
 
 <!-- component -->
 
+<section class="text-laylanavy body-font">
+	<div class="container px-5 py-6 mx-auto">
+		@*<div class="flex flex-wrap w-full mb-20 flex-col items-center text-center">
+			<h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900"> Layla in a nutshell</h1>
+			<p class="lg:w-1/2 w-full leading-relaxed text-base">
+				Layla is Senior Developer Evangelist at Twilio specialising in the .NET stack. She is a Microsoft MVP, a director on the board of the .NET Foundation, and co-organiser of MK .NET user group. Layla loves sharing knowledge whilst having fun. No question is stupid and beginners are always welcome.
+			</p>
+		</div>*@
+		<div class="flex flex-wrap justify-between sm:-m-4 -mx-4 -mb-10 -mt-4">
 
-<section class="mb-16 text-left">
-    <h3 class="font-decoserif font-bold text-3xl text-laylateal mb-4">Layla Porter</h3>
-    <p class="text-laylanavy text-xl mb-16">Layla is Senior Developer Evangelist at Twilio specialising in the .NET stack. She is a Microsoft MVP, a director on the board of the .NET Foundation, and co-organiser of MK .NET user group. Layla loves sharing knowledge whilst having fun. No question is stupid and beginners are always welcome.</p>
+
+			<div class="mt-3 p-0 md:w-1/3 md:mb-0 mb-6 flex flex-col justify-top items-center max-w-sm">
+				<div class="bg-gray-300 h-56 w-full rounded-lg shadow-md bg-cover bg-center" style="background-image: url(images/tdd.jpg)"></div>
+
+				<div class=" w-70 bg-white -mt-10 shadow-lg rounded-lg overflow-hidden p-5">
+					<div class="title-post font-medium">International Speaker</div>
+					<div class="summary-post text-base text-justify">
+						<p>My first technical talk was at the Milton Keynes JavaScript user group in 2016.I presented JavaScript templating and I remember how nervewracking it was!</p>
+						<p>Since then I have spoken across Europe and North America on a variety of technical topics at both prestigious conferences and community events alike.</p>
+						<NavLink href="/appearances" class="align-center bg-laylagold font-decoserif text-laylanavy text-bold px-2 mt-4 block rounded p-2 "><span class="">Appearances</span></NavLink>
+					</div>
+
+				</div>
+			</div>
+
+			<div class="mt-3 p-0 md:w-1/3 md:mb-0 mb-6 flex flex-col justify-top items-center max-w-sm">
+				<div class="bg-gray-300 h-56 w-full rounded-lg shadow-md bg-cover bg-center" style="background-image: url(images/teacher.png)"></div>
+
+				<div class=" w-70 bg-white -mt-10 shadow-lg rounded-lg overflow-hidden p-5">
+
+					<div class="title-post font-medium">Teacher</div>
+
+					<div class="summary-post text-base text-justify">
+						<p>I started teaching unofficially when I was 8 years old at my local riding school. I became a mathematics mentor whilst at university, helping children one on one. </p>
+						<p>I returned to the equestrian sphere, coaching dressage which lead me to qualify as a PT and Pilates Instructor.</p>
+						<p>I now teach tech in-person, on video, through blogs and most recently on Twitch.</p>
+						<NavLink href="/community" class="align-center bg-laylagold font-decoserif text-laylanavy text-bold px-2 mt-4 block rounded p-2 "><span class="">Community</span></NavLink>
+					</div>
+
+				</div>
+			</div>
+
+			<div class="mt-3 p-0 md:w-1/3 md:mb-0 mb-6 flex flex-col justify-top items-center max-w-sm">
+				<div class="bg-gray-300 h-56 w-full rounded-lg shadow-md bg-cover bg-center" style="background-image: url(images/halloween.jpg)"></div>
+
+				<div class=" w-70 bg-white -mt-10 shadow-lg rounded-lg overflow-hidden p-5">
+
+					<div class="title-post font-medium">Streamer</div>
+
+					<div class="summary-post text-base text-justify">
+						<p>
+							I am a technology streamer on Twitch, streaming several times a week. sharing knowledge and having fun.
+						</p>
+						<p>
+							I am involved in the streamer community and a member of the Leadership Committee of The Live Coders, a Twitch streaming team with the shared goal to make a friendly and welcoming community for developers of all levels in any language.
+						</p>
+						<NavLink href="/streaming" class="align-center bg-laylagold font-decoserif text-laylanavy text-bold px-2 mt-4 block rounded p-2 "><span class="">Streaming</span></NavLink>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
 </section>
 
 @code {

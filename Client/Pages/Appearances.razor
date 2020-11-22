@@ -1,0 +1,380 @@
+﻿@page "/appearances"
+	<!-- component -->
+<section class="py-12">
+	<div class="container mx-auto">
+
+		<div class="flex align-middle">
+			<h1 class="text-2xl font-black text-gray-900 pb-2 pl-6 pr-4 md:pl-12">
+				Appearances in 2020
+			</h1>
+			@if (visible2020)
+			{
+				<button @onclick="Update2020" class="font-xs border border-laylanavy bg-laylateal text-white rounded-md px-2 py-0 m-2 transition duration-500 ease select-none hover:bg-teal-800 focus:outline-none focus:shadow-outline">
+					hide
+				</button>
+
+			}
+			else
+			{<button @onclick="Update2020" class="font-xs border border-laylanavy bg-laylateal text-white rounded-md px-2 py-0 m-2 transition duration-500 ease select-none hover:bg-teal-800 focus:outline-none focus:shadow-outline">
+					show
+				</button>
+
+			}
+		</div>
+
+		@if (visible2020)
+		{
+			<div class="flex flex-wrap px-6">
+				<div class="w-full lg:w-1/2 md:px-4 lg:px-6 py-5">
+					<div class="bg-white hover:shadow-xl">
+						<div class="bg-gradient-to-r from-laylateal via-laylagold to-laylanavy">
+							<h1 class="font-bold text-3xl text-white text-center py-4">
+								Update Now Conf
+							</h1>
+						</div>
+						<div class="px-4 py-4 md:px-10">
+							<h1 class="font-bold text-lg">
+								Tdd and the Terminator
+							</h1>
+							<p class="py-4">
+								This session was given virtually
+							</p>
+							<div class="flex flex-wrap pt-8">
+								<div class="w-full md:w-1/3 text-sm font-medium">
+									NOVEMBER 23,2020
+								</div>
+								<div class="2/3">
+									@*<div class="text-sm font-medium">
+										SHARE:
+										<a href="" class="text-blue-700 px-1 ">
+											FACEBOOk
+										</a>
+										<a href="" class="text-blue-500 px-1 ">
+											TWITTER
+										</a>
+										<a href="" class="text-red-600 px-1 ">
+											GOOGLE+
+										</a>
+									</div>*@
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="w-full lg:w-1/2  md:px-4 lg:px-6 py-5">
+					<div class="bg-white hover:shadow-xl">
+						<div class="bg-gradient-to-r from-laylateal via-laylagold to-laylanavy">
+							<h1 class="font-bold text-3xl text-white text-center py-4">
+								.NET Conf
+							</h1>
+						</div>
+						<div class="px-4 py-4 md:px-10">
+							<h1 class="font-bold text-lg">
+								State of the Foundation
+							</h1>
+							<p class="py-4">
+								I presented directly after opening keynote alongside the .NET Foundation's executive director, Claire Novotny.
+								I also MC'd and produced a 3 hour section of the 24 hour program
+							</p>
+							<div class="flex flex-wrap pt-8">
+								<div class="w-full md:w-1/3 text-sm font-medium">
+									November 10-12,2020
+								</div>
+								<div class="md:2/3">
+									@*<div class="text-sm font-medium">
+										SHARE:
+										<a href="" class="text-blue-700 px-1 ">
+											FACEBOOk
+										</a>
+										<a href="" class="text-blue-500 px-1 ">
+											TWITTER
+										</a>
+										<a href="" class="text-red-600 px-1 ">
+											GOOGLE+
+										</a>
+									</div>*@
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="w-full lg:w-1/2  md:px-4 lg:px-6 py-5">
+					<div class="bg-white hover:shadow-xl">
+						<div class="bg-gradient-to-r from-laylateal via-laylagold to-laylanavy">
+							<h1 class="font-bold text-3xl text-white text-center py-4">
+								.NET Docs Show
+							</h1>
+						</div>
+						<div class="px-4 py-4 md:px-10">
+							<h1 class="font-bold text-lg">
+								Building a workshop
+							</h1>
+							<p class="py-4">
+								Guest appearance on the Microsoft .NET Docs Twitch channel
+							</p>
+							<div class="flex flex-wrap pt-8">
+								<div class="w-full md:w-1/3 text-sm font-medium">
+									August 08, 2020
+								</div>
+								<div class="md:2/3">
+									@*<div class="text-sm font-medium">
+										SHARE:
+										<a href="" class="text-blue-700 px-1 ">
+											FACEBOOk
+										</a>
+										<a href="" class="text-blue-500 px-1 ">
+											TWITTER
+										</a>
+										<a href="" class="text-red-600 px-1 ">
+											GOOGLE+
+										</a>
+									</div>*@
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="w-full lg:w-1/2  md:px-4 lg:px-6 py-5">
+					<div class="bg-white hover:shadow-xl">
+						<div class="bg-gradient-to-r from-laylateal via-laylagold to-laylanavy">
+							<h1 class="font-bold text-3xl text-white text-center py-4">
+								NDC Oslo
+							</h1>
+						</div>
+						<div class="px-4 py-4 md:px-10">
+
+							<h1 class="font-bold text-lg">
+								TDD and the Terminator
+							</h1>
+							<p class="py-4">
+								This session was given virtually
+							</p>
+							<div class="flex flex-wrap pt-8">
+								<div class="w-full md:w-1/3 text-sm font-medium">
+									June 12,2020
+								</div>
+								<div class="md:2/3">
+									@*<div class="text-sm font-medium">
+										SHARE:
+										<a href="" class="text-blue-700 px-1 ">
+											FACEBOOk
+										</a>
+										<a href="" class="text-blue-500 px-1 ">
+											TWITTER
+										</a>
+										<a href="" class="text-red-600 px-1 ">
+											GOOGLE+
+										</a>
+									</div>*@
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="w-full lg:w-1/2 md:px-4 lg:px-6 py-5">
+					<div class="bg-white hover:shadow-xl">
+						<div class="bg-gradient-to-r from-laylateal via-laylagold to-laylanavy">
+							<h1 class="font-bold text-3xl text-white text-center py-4">
+								Microsoft Build - Chillzone
+							</h1>
+						</div>
+						<div class="px-4 py-4 md:px-10">
+							<h1 class="font-bold text-lg">
+								Chat show
+							</h1>
+							<p class="py-4">
+								Guest on the MS Build Chillzone discussing the Build announcements
+							</p>
+							<div class="flex flex-wrap pt-8">
+								<div class="w-full md:w-1/3 text-sm font-medium">
+									May 21,2020
+								</div>
+								<div class="2/3">
+									@*<div class="text-sm font-medium">
+										SHARE:
+										<a href="" class="text-blue-700 px-1 ">
+											FACEBOOk
+										</a>
+										<a href="" class="text-blue-500 px-1 ">
+											TWITTER
+										</a>
+										<a href="" class="text-red-600 px-1 ">
+											GOOGLE+
+										</a>
+									</div>*@
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="w-full lg:w-1/2  md:px-4 lg:px-6 py-5">
+					<div class="bg-white hover:shadow-xl">
+						<div class="bg-gradient-to-r from-laylateal via-laylagold to-laylanavy">
+							<h1 class="font-bold text-3xl text-white text-center py-4">
+								DDD North
+							</h1>
+						</div>
+						<div class="px-4 py-4 md:px-10">
+							<h1 class="font-bold text-lg">
+								TDD and the Terminator
+							</h1>
+							<p class="py-4">
+								A free to attend community conference in Hull, UK
+							</p>
+							<div class="flex flex-wrap pt-8">
+								<div class="w-full md:w-1/3 text-sm font-medium">
+									March 29, 2020
+								</div>
+								<div class="md:2/3">
+									@*<div class="text-sm font-medium">
+										SHARE:
+										<a href="" class="text-blue-700 px-1 ">
+											FACEBOOk
+										</a>
+										<a href="" class="text-blue-500 px-1 ">
+											TWITTER
+										</a>
+										<a href="" class="text-red-600 px-1 ">
+											GOOGLE+
+										</a>
+									</div>*@
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="w-full lg:w-1/2  md:px-4 lg:px-6 py-5">
+					<div class="bg-white hover:shadow-xl">
+						<div class="bg-gradient-to-r from-laylateal via-laylagold to-laylanavy">
+							<h1 class="font-bold text-3xl text-white text-center py-4">
+								Swetugg
+							</h1>
+						</div>
+						<div class="px-4 py-4 md:px-10">
+							<h1 class="font-bold text-lg">
+								TDD and the Terminator
+							</h1>
+							<p class="py-4">
+								A popular .NET conference in Sweden
+							</p>
+							<div class="flex flex-wrap pt-8">
+								<div class="w-full md:w-1/3 text-sm font-medium">
+									February 04, 2020
+								</div>
+								<div class="md:2/3">
+									@*<div class="text-sm font-medium">
+										SHARE:
+										<a href="" class="text-blue-700 px-1 ">
+											FACEBOOk
+										</a>
+										<a href="" class="text-blue-500 px-1 ">
+											TWITTER
+										</a>
+										<a href="" class="text-red-600 px-1 ">
+											GOOGLE+
+										</a>
+									</div>*@
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="w-full lg:w-1/2  md:px-4 lg:px-6 py-5">
+					<div class="bg-white hover:shadow-xl">
+						<div class="bg-gradient-to-r from-laylateal via-laylagold to-laylanavy">
+							<h1 class="font-bold text-3xl text-white text-center py-4">
+								PubConf London
+							</h1>
+						</div>
+						<div class="px-4 py-4 md:px-10">
+
+							<h1 class="font-bold text-lg">
+								The Dating Game
+							</h1>
+							<p class="py-4">
+								A comedy developer variety show and competition, I came 4th!
+								The most nerve wracking event I have ever done!
+							</p>
+							<div class="flex flex-wrap pt-8">
+								<div class="w-full md:w-1/3 text-sm font-medium">
+									Jan 31,2020
+								</div>
+								<div class="md:2/3">
+									@*<div class="text-sm font-medium">
+										SHARE:
+										<a href="" class="text-blue-700 px-1 ">
+											FACEBOOk
+										</a>
+										<a href="" class="text-blue-500 px-1 ">
+											TWITTER
+										</a>
+										<a href="" class="text-red-600 px-1 ">
+											GOOGLE+
+										</a>
+									</div>*@
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="w-full lg:w-1/2 md:px-4 lg:px-6 py-5">
+					<div class="bg-white hover:shadow-xl">
+						<div class="bg-gradient-to-r from-laylateal via-laylagold to-laylanavy">
+							<h1 class="font-bold text-3xl text-white text-center py-4">
+								NDC London
+							</h1>
+						</div>
+						<div class="px-4 py-4 md:px-10">
+							<h1 class="font-bold text-lg">
+								Sprinkle some sparkle on it
+							</h1>
+							<p class="py-4">
+								Fellow MVP, Luce Carter and I presented a session where I was taught Xamarin, live on stage.
+							</p>
+							<div class="flex flex-wrap pt-8">
+								<div class="w-full md:w-1/3 text-sm font-medium">
+									Jan 31,2020
+								</div>
+								<div class="2/3">
+									@*<div class="text-sm font-medium">
+										SHARE:
+										<a href="" class="text-blue-700 px-1 ">
+											FACEBOOk
+										</a>
+										<a href="" class="text-blue-500 px-1 ">
+											TWITTER
+										</a>
+										<a href="" class="text-red-600 px-1 ">
+											GOOGLE+
+										</a>
+									</div>*@
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		}
+ 
+	</div>
+</section>
+
+
+@code {
+
+	private bool visible2020;
+	private bool visible2019;
+
+	protected override void OnInitialized()
+	{
+		visible2020 = true;
+		visible2019 = false;
+	}
+
+	private void Update2020(MouseEventArgs e)
+	{
+		visible2020 = !visible2020;
+	}
+}
