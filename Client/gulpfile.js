@@ -27,5 +27,5 @@ gulp.task('css:prod', () => {
 
 gulp.task('copy', () => {
     return gulp.src('./routes.json')
-        .pipe(gulp.dest('./wwwroot/'));
+        .pipe(gulp.dest('./dist/wwwroot/'));
 })
