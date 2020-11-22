@@ -24,3 +24,8 @@ gulp.task('css:prod', () => {
         .pipe(cleanCSS({ level: 2 }))
         .pipe(gulp.dest('./wwwroot/css/'));
 });
+
+gulp.task('copy', () => {
+    return gulp.src('./routes.json')
+        .pipe(gulp.dest('./wwwroot/'));
+})
