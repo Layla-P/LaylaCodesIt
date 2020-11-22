@@ -1,7 +1,7 @@
 {
   "scripts": {
     "build": "npm run css:prod && npm run dotnet:publish",
-    "css:dev": "gulp css:prod",
+    "css:prod": "gulp css:dev",
     "copy": "gulp copy",
     "dotnet:publish": "dotnet publish -c Release -o dist"
   },
