@@ -5,6 +5,11 @@
 		<RazorLangVersion>3.0</RazorLangVersion>
 	</PropertyGroup>
 
+	<ItemGroup>
+	  <Content Remove="Pages\Blog.razor" />
+	  <Content Remove="Pages\Blogs.razor" />
+	</ItemGroup>
+
 
 	<ItemGroup>
 		<Content Include="Styles\site.css" />
@@ -23,8 +28,8 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<None Include="Pages\Blog.razor" />
 		<None Include="Pages\Blogs.razor" />
+		<None Include="Pages\Blog.razor" />
 		<None Include="Pages\Community.razor" />
 		<None Include="Pages\Media.razor" />
 		<None Include="Pages\Streaming.razor" />

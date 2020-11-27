@@ -8,31 +8,31 @@ namespace Api
 {
     public interface IProductData
     {
-        Task<Product> AddProduct(Product product);
+        Task<Blog> AddProduct(Blog product);
         Task<bool> DeleteProduct(int id);
-        Task<IEnumerable<Product>> GetProducts();
-        Task<Product> UpdateProduct(Product product);
+        Task<IEnumerable<Blog>> GetProducts();
+        Task<Blog> UpdateProduct(Blog product);
     }
 
     public class ProductData : IProductData
     {
-        private readonly List<Product> products = new List<Product>
+        private readonly List<Blog> products = new List<Blog>
         {
-            new Product
+            new Blog
             {
                 Id = 10,
                 Name = "Strawberries",
                 Description = "16oz package of fresh organic strawberries",
                 Quantity = 1
             },
-            new Product
+            new Blog
             {
                 Id = 20,
                 Name = "Sliced bread",
                 Description = "Load of fresh sliced wheat bread",
                 Quantity = 1
             },
-            new Product
+            new Blog
             {
                 Id = 30,
                 Name = "Apples",
@@ -47,14 +47,14 @@ namespace Api
             return random.Next(100, 1000);
         }
 
-        public Task<Product> AddProduct(Product product)
+        public Task<Blog> AddProduct(Blog product)
         {
             product.Id = GetRandomInt();
             products.Add(product);
             return Task.FromResult(product);
         }
 
-        public Task<Product> UpdateProduct(Product product)
+        public Task<Blog> UpdateProduct(Blog product)
         {
             var index = products.FindIndex(p => p.Id == product.Id);
             products[index] = product;
@@ -68,7 +68,7 @@ namespace Api
             return Task.FromResult(true);
         }
 
-        public Task<IEnumerable<Product>> GetProducts()
+        public Task<IEnumerable<Blog>> GetProducts()
         {
             return Task.FromResult(products.AsEnumerable());
         }

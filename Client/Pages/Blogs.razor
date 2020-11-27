@@ -30,7 +30,7 @@
 					<div class="summary-post text-base text-justify">
 						Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis veritatis vel suscipit ex dolore possimus iure.
 						<button @onclick="@(e => SelectBlog(1))" class="bg-blue-100 text-blue-500 mt-4 block rounded p-2 text-sm "><span class="">Go to blog</span></button>
-					   
+
 					</div>
 
 				</div>
@@ -84,7 +84,17 @@
 
 @code {
 
-  
+
+	private IEnumerable<Blog> blogs;
+
+
+	protected override async Task OnInitializedAsync()
+	{
+		blogs = await http.GetFromJsonAsync<IEnumerable<Blog>>("");
+	}
+
+
+
 	private void SelectBlog(int blogId)
 	{
 		navigation.NavigateTo($"/blog/{blogId}");
