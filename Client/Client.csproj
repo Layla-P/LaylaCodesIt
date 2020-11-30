@@ -1,43 +1,43 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
-	<PropertyGroup>
-		<TargetFramework>netstandard2.1</TargetFramework>
-		<RazorLangVersion>3.0</RazorLangVersion>
-	</PropertyGroup>
+  <PropertyGroup>
+	<TargetFramework>netstandard2.1</TargetFramework>
+	<RazorLangVersion>3.0</RazorLangVersion>
+  </PropertyGroup>
 
-	<ItemGroup>
-	  <Content Remove="Pages\Blog.razor" />
-	  <Content Remove="Pages\Blogs.razor" />
-	</ItemGroup>
+  <ItemGroup>
+	<Content Include="Styles\site.css" />
+  </ItemGroup>
 
+  <ItemGroup>
+	<PackageReference Include="GraphQL" Version="3.1.5" />
+	<PackageReference Include="GraphQL.Client.Abstractions" Version="3.2.0" />
+	<PackageReference Include="GraphQL.Client.Abstractions.Websocket" Version="3.2.0" />
+	<PackageReference Include="GraphQL.Client.Serializer.Newtonsoft" Version="3.2.0" />
+	<PackageReference Include="GraphQL.Client.Serializer.SystemTextJson" Version="3.2.0" />
+	<PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="3.2.1" />
+	<PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.Build" Version="3.2.1" PrivateAssets="all" />
+	<PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="3.2.1" PrivateAssets="all" />
+	<PackageReference Include="Microsoft.AspNetCore.WebUtilities" Version="2.2.0" />
+	<PackageReference Include="System.Net.Http.Json" Version="3.2.0" />
+	<PackageReference Include="GraphQL.Client" Version="3.2.0" />
+  </ItemGroup>
 
-	<ItemGroup>
-		<Content Include="Styles\site.css" />
-	</ItemGroup>
+  <ItemGroup>
+	<ProjectReference Include="..\Data\Data.csproj" />
+  </ItemGroup>
 
-	<ItemGroup>
-		<PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="3.2.1" />
-		<PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.Build" Version="3.2.1" PrivateAssets="all" />
-		<PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="3.2.1" PrivateAssets="all" />
-		<PackageReference Include="Microsoft.AspNetCore.WebUtilities" Version="2.2.0" />
-		<PackageReference Include="System.Net.Http.Json" Version="3.2.0" />
-	</ItemGroup>
+  <ItemGroup>
+	<None Include="Pages\Blogs.razor" />
+	<None Include="Pages\Blog.razor" />
+	<None Include="Pages\Community.razor" />
+	<None Include="Pages\Media.razor" />
+	<None Include="Pages\Streaming.razor" />
+	<None Include="Pages\Appearances.razor" />
+  </ItemGroup>
 
-	<ItemGroup>
-		<ProjectReference Include="..\Data\Data.csproj" />
-	</ItemGroup>
-
-	<ItemGroup>
-		<None Include="Pages\Blogs.razor" />
-		<None Include="Pages\Blog.razor" />
-		<None Include="Pages\Community.razor" />
-		<None Include="Pages\Media.razor" />
-		<None Include="Pages\Streaming.razor" />
-		<None Include="Pages\Appearances.razor" />
-	</ItemGroup>
-
-	<ItemGroup>
-	  <Folder Include="wwwroot\css\" />
-	</ItemGroup>
+  <ItemGroup>
+	<Folder Include="wwwroot\css\" />
+  </ItemGroup>
 
 </Project>
